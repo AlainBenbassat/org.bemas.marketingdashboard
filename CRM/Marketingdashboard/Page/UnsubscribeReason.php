@@ -113,7 +113,7 @@ class CRM_Marketingdashboard_Page_UnsubscribeReason extends CRM_Core_Page {
   }
 
   private function getLinkToContactSummary($name, $id) {
-    $queryString = "reset=1&id=$id";
+    $queryString = "reset=1&cid=$id";
     $url = CRM_Utils_System::url('civicrm/contact/view', $queryString);
     $a = "<a href=\"$url\">" . $name . '</a>';
 
