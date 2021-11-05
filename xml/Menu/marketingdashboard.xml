@@ -6,4 +6,16 @@
     <title>Main</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/marketing-dashboard-unsub</path>
+    <page_callback>CRM_Marketingdashboard_Page_UnsubscribeReason</page_callback>
+    <title>UnsubscribeReason</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/marketing-dashboard-course-origin</path>
+    <page_callback>CRM_Marketingdashboard_Page_CourseOrigin</page_callback>
+    <title>CourseOrigin</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
