@@ -11,8 +11,8 @@ class CRM_Marketingdashboard_Page_CourseOrigin extends CRM_Core_Page {
       $this->year = $this->getFilterYearFromUrl();
 
       $filterLinks = $this->getFilterLinks();
-      $sourceSummary = $this->getUnsubscribeReasonSummary();
-      $sources = $this->getUnsubscribeReasons();
+      $sourceSummary = $this->getCourseOriginSummary();
+      $sources = $this->getCourseOrigins();
 
       $this->assign('filterLinks', $filterLinks);
       $this->assign('sourceSummary', $sourceSummary);
@@ -63,7 +63,7 @@ class CRM_Marketingdashboard_Page_CourseOrigin extends CRM_Core_Page {
     return $v;
   }
 
-  private function getUnsubscribeReasonSummary() {
+  private function getCourseOriginSummary() {
     $sql = "
       select
         wfsd.data source,
@@ -108,7 +108,7 @@ class CRM_Marketingdashboard_Page_CourseOrigin extends CRM_Core_Page {
     return $rows;
   }
 
-  private function getUnsubscribeReasons() {
+  private function getCourseOrigins() {
     $sql = "
       select
         n.nid,
