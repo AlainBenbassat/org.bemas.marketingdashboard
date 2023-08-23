@@ -18,4 +18,10 @@
     <title>CourseOrigin</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/marketing-dashboard-other-topics</path>
+    <page_callback>CRM_Marketingdashboard_Page_OtherTopics</page_callback>
+    <title>OtherTopics</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
