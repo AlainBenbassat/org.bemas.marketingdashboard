@@ -24,4 +24,10 @@
     <title>OtherTopics</title>
     <access_arguments>access CiviCRM</access_arguments>
   </item>
+  <item>
+    <path>civicrm/marketing-dashboard-membership-ending-reason</path>
+    <page_callback>CRM_Marketingdashboard_Page_MembershipEndingReason</page_callback>
+    <title>OtherTopics</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
 </menu>
